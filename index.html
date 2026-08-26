@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entrelinhas: Você Reconheceria? - Um quiz interativo sobre violências invisíveis no cotidiano">
+    <title>Entrelinhas – Você Reconheceria?</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Montserrat:wght@600;700;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cursor Personalizado -->
+    <div id="custom-cursor"></div>
+
+    <!-- Container Principal -->
+    <main id="app">
+
+        <!-- Tela 1: Boas-Vindas -->
+        <section id="tela-inicio" class="tela tela-ativa">
+            <div class="container">
+                <h1 class="titulo-principal">Entrelinhas</h1>
+                <h2 class="subtitulo">Você Reconheceria?</h2>
+                <p class="introducao">
+                    Violências sutis estão presentes no nosso cotidiano, muitas vezes disfarçadas de cuidado ou brincadeira.
+                    Este quiz vai testar sua capacidade de identificar comportamentos problemáticos que muitos normalizam.
+                </p>
+                <button id="btn-iniciar" class="botao botao-primario">Iniciar Jornada</button>
+            </div>
+        </section>
+
+        <!-- Tela 2: Quiz -->
+        <section id="tela-quiz" class="tela">
+            <div class="container">
+                <div class="progresso">
+                    <div class="progresso-barra">
+                        <div id="progresso-preenchido" class="progresso-preenchido"></div>
+                    </div>
+                    <p class="progresso-texto">Questão <span id="questao-atual">1</span> de <span id="questao-total">12</span></p>
+                </div>
+
+                <div class="quiz-conteudo">
+                    <p id="situacao-texto" class="situacao"></p>
+                    <div id="opcoes-container" class="opcoes-container"></div>
+                </div>
+
+                <!-- Feedback -->
+                <div id="feedback" class="feedback escondido">
+                    <p id="feedback-titulo" class="feedback-titulo"></p>
+                    <p id="feedback-explicacao" class="feedback-explicacao"></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tela 3: Processamento -->
+        <section id="tela-loading" class="tela">
+            <div class="container container-center">
+                <h2 class="titulo-loading">Analisando suas entrelinhas...</h2>
+                <div class="loading-barra">
+                    <div id="loading-preenchido" class="loading-preenchido"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tela 4: Resultado -->
+        <section id="tela-resultado" class="tela">
+            <div class="container">
+                <h2 class="titulo-resultado">Seu Resultado</h2>
+
+                <div class="resultado-card">
+                    <div class="score-container">
+                        <p class="score-label">Score de Consciência</p>
+                        <p id="score-valor" class="score-valor">0%</p>
+                    </div>
+
+                    <div class="nivel-container">
+                        <p id="nivel-titulo" class="nivel-titulo"></p>
+                        <p id="nivel-descricao" class="nivel-descricao"></p>
+                    </div>
+
+                    <div class="ranking-container">
+                        <p id="ranking-texto" class="ranking-texto"></p>
+                    </div>
+                </div>
+
+                <div class="acoes-resultado">
+                    <button id="btn-tentar-novamente" class="botao botao-secundario">Tentar Novamente</button>
+                    <button id="btn-compartilhar" class="botao botao-primario">Compartilhar Resultado</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Modal de Compartilhamento -->
+        <div id="modal-compartilhar" class="modal escondido">
+            <div class="modal-conteudo">
+                <button id="modal-fechar" class="modal-fechar" aria-label="Fechar modal">&times;</button>
+
+                <h3 class="modal-titulo">Compartilhe seu resultado</h3>
+
+                <!-- Card para captura (html2canvas) -->
+                <div id="card-resultado" class="card-compartilhar">
+                    <h2 class="card-titulo">Entrelinhas</h2>
+                    <p class="card-subtitulo">Você Reconheceria?</p>
+                    <p id="card-score" class="card-score">0%</p>
+                    <p id="card-nivel" class="card-nivel"></p>
+                    <p class="card-frase">"Você reconheceu o que muitos normalizam"</p>
+                </div>
+
+                <div class="modal-acoes">
+                    <button id="btn-baixar-imagem" class="botao botao-primario">Baixar Imagem</button>
+                    <button id="btn-copiar-texto" class="botao botao-secundario">Copiar Texto</button>
+                </div>
+
+                <p id="feedback-copiar" class="feedback-copiar escondido">✓ Texto copiado!</p>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- html2canvas (carregado apenas quando necessário) -->
+    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js" defer></script>
+
+    <!-- Script principal -->
+    <script src="script.js"></script>
+</body>
+</html>
