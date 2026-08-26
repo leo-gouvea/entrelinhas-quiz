@@ -155,14 +155,15 @@ body.dispositivo-touch .modal-fechar {
     min-height: 100vh;
     width: 100%;
     position: relative;
-    overflow: hidden;
+    overflow-x: clip;
+    overflow-y: visible;
     z-index: 1;
 }
 
 .container {
     max-width: 100%;
     width: 100%;
-    padding: 20px;
+    padding: clamp(24px, 5vw, 48px);
     position: relative;
 }
 
@@ -183,8 +184,10 @@ body.dispositivo-touch .modal-fechar {
 #app {
     position: relative;
     min-height: 100vh;
+    min-height: 100svh;
     width: 100%;
-    overflow: hidden;
+    overflow-x: clip;
+    overflow-y: visible;
 }
 
 /* Cada tela ocupa exatamente o palco inteiro */
@@ -195,11 +198,15 @@ body.dispositivo-touch .modal-fechar {
 
     width: 100%;
     min-height: 100vh;
+    min-height: 100svh;
 
     display: none;
     opacity: 0;
 
     transform: translateX(0);
+
+    overflow-x: clip;
+    overflow-y: auto;
 
     will-change: transform, opacity;
 }
@@ -454,7 +461,7 @@ h1, h2, h3 {
     color: var(--text-primary);
     margin-bottom: 0.5rem;
     text-align: center;
-    letter-spacing: -0.03em;
+    letter-spacing: 0;
     line-height: 1;
     animation: floatTitle 3s ease-in-out infinite;
 }
@@ -653,6 +660,7 @@ h1, h2, h3 {
 #tela-loading,
 #tela-resultado {
     min-height: 100vh;
+    min-height: 100svh;
     width: 100%;
 }
 
@@ -706,6 +714,7 @@ h1, h2, h3 {
 
 /* Situação */
 .situacao {
+    font-family: var(--font-heading);
     font-size: 1.3rem;
     margin-bottom: 2.5rem;
     line-height: 1.8;
@@ -718,6 +727,13 @@ h1, h2, h3 {
     border: var(--borda-largura) solid var(--line-black);
     border-left: 6px solid var(--color-primary);
     position: relative;
+}
+
+.situacao .fala-destaque {
+    font-family: var(--font-display);
+    font-weight: 700;
+    color: #241633;
+    background: linear-gradient(transparent 70%, rgba(126, 87, 194, 0.18) 70%);
 }
 
 .situacao::before {
@@ -936,6 +952,9 @@ h1, h2, h3 {
     left: 0;
     width: 100%;
     height: 100%;
+    height: 100svh;
+    padding: 16px;
+    overflow-y: auto;
     background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(8px);
     display: flex;
@@ -947,7 +966,7 @@ h1, h2, h3 {
 
 .modal-conteudo {
     background-color: var(--bg-primary);
-    padding: 48px;
+    padding: clamp(28px, 6vw, 48px);
     border: var(--borda-largura) solid var(--line-black);
     border-radius: var(--radius);
     max-width: 550px;
@@ -1077,6 +1096,178 @@ h1, h2, h3 {
     .situacao {
         font-size: 1.4rem;
         padding: 32px;
+    }
+}
+
+/* Telas pequenas: todos os blocos permanecem legíveis sem criar overflow horizontal. */
+@media (max-width: 767px) {
+    body {
+        cursor: auto;
+    }
+
+    #app {
+        min-height: 100svh;
+    }
+
+    .container {
+        padding: clamp(24px, 7vw, 36px) clamp(16px, 5vw, 28px);
+    }
+
+    #tela-inicio .container {
+        min-height: 100svh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .titulo-principal {
+        font-size: clamp(3rem, 15vw, 4.5rem);
+    }
+
+    .subtitulo {
+        font-size: clamp(1.35rem, 6vw, 1.75rem);
+        margin-bottom: 1.75rem;
+    }
+
+    .introducao {
+        font-size: 0.95rem;
+        margin-bottom: 1.5rem;
+    }
+
+    #btn-iniciar {
+        width: min(100%, 320px);
+        align-self: center;
+        padding: 16px 20px;
+        font-size: 1.05rem;
+    }
+
+    .progresso {
+        margin-bottom: 1.5rem;
+    }
+
+    .situacao {
+        font-size: clamp(1.05rem, 4.5vw, 1.3rem);
+        line-height: 1.65;
+        padding: 22px 18px 22px 24px;
+        margin-bottom: 1.5rem;
+    }
+
+    .situacao::before {
+        top: 5px;
+        left: 8px;
+        font-size: 3rem;
+    }
+
+    .botao-opcao {
+        margin-bottom: 14px;
+        padding: 16px 14px 16px 18px;
+        font-size: 0.98rem;
+        line-height: 1.45;
+    }
+
+    .feedback {
+        margin-top: 1.5rem;
+        padding: 18px;
+    }
+
+    .feedback-explicacao {
+        font-size: 0.98rem;
+        line-height: 1.6;
+    }
+
+    .titulo-loading {
+        font-size: clamp(1.35rem, 6vw, 2rem);
+    }
+
+    #tela-resultado .container {
+        padding-top: 32px;
+    }
+
+    .titulo-resultado {
+        font-size: clamp(2rem, 10vw, 2.5rem);
+        margin-bottom: 1.5rem;
+    }
+
+    .resultado-card {
+        padding: 28px 18px;
+        margin-bottom: 1.75rem;
+        box-shadow: var(--shadow-lg);
+    }
+
+    .score-container,
+    .nivel-container {
+        margin-bottom: 1.5rem;
+    }
+
+    .score-label {
+        font-size: 0.9rem;
+        letter-spacing: 0.5px;
+    }
+
+    .score-valor {
+        font-size: clamp(4rem, 19vw, 5rem);
+    }
+
+    .nivel-container,
+    .ranking-container {
+        padding: 18px 14px;
+    }
+
+    .nivel-titulo {
+        font-size: clamp(1.35rem, 6vw, 1.75rem);
+    }
+
+    .nivel-descricao,
+    .ranking-texto {
+        font-size: 0.98rem;
+        line-height: 1.55;
+    }
+
+    .acoes-resultado,
+    .modal-acoes {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0.9rem;
+    }
+
+    .acoes-resultado .botao,
+    .modal-acoes .botao {
+        width: 100%;
+    }
+
+    .modal-conteudo {
+        width: min(100%, 550px);
+        max-height: calc(100svh - 32px);
+        overflow-y: auto;
+    }
+
+    .modal-titulo {
+        font-size: clamp(1.35rem, 6vw, 1.75rem);
+        margin-bottom: 1.5rem;
+        padding-right: 28px;
+    }
+
+    .card-compartilhar {
+        padding: 28px 16px;
+        margin-bottom: 1.5rem;
+    }
+
+    .card-titulo {
+        font-size: 1.75rem;
+    }
+
+    .card-score {
+        font-size: clamp(2.75rem, 15vw, 3.5rem);
+    }
+
+    .card-nivel {
+        font-size: 1.15rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
     }
 }
 

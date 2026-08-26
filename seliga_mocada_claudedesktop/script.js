@@ -573,6 +573,36 @@ function selecionarQuestoesAleatorias() {
     }));
 }
 
+function renderizarSituacao(elemento, texto) {
+    const partes = texto.split(/('(?:[^']|'{2})+'|“[^”]+”)/g);
+
+    partes.forEach((parte, index) => {
+        if (!parte) return;
+
+        if (index % 2 === 1) {
+            const destaque = document.createElement('strong');
+            destaque.className = 'fala-destaque';
+            destaque.textContent = parte;
+            elemento.appendChild(destaque);
+        } else {
+            elemento.appendChild(document.createTextNode(parte));
+        }
+    });
+}
+
+function animarEntradaCartao(elemento) {
+    elemento.classList.add('cartao-entra-direita');
+    let animacaoFinalizada = false;
+    const limparAnimacao = () => {
+        if (animacaoFinalizada) return;
+        animacaoFinalizada = true;
+        elemento.classList.remove('cartao-entra-direita');
+    };
+
+    elemento.addEventListener('animationend', limparAnimacao, { once: true });
+    setTimeout(limparAnimacao, 650);
+}
+
 function iniciarQuiz() {
     indicePerguntaAtual = 0;
     respostasUsuario = [];
@@ -644,8 +674,8 @@ function carregarPergunta() {
 
     // Situação entra da direita (primeiro cartão da "estante")
     setTimeout(() => {
-        situacaoTexto.textContent = questao.situacao;
-        situacaoTexto.classList.add('cartao-entra-direita');
+        renderizarSituacao(situacaoTexto, questao.situacao);
+        animarEntradaCartao(situacaoTexto);
         if (podeTocarSomCard) playSwipeSound();
     }, 0);
 
@@ -653,8 +683,9 @@ function carregarPergunta() {
     questao.opcoes.forEach((opcao, index) => {
         setTimeout(() => {
             const botao = document.createElement('button');
-            botao.classList.add('botao', 'botao-opcao', 'cartao-entra-direita');
+            botao.classList.add('botao', 'botao-opcao');
             botao.textContent = opcao.texto;
+            animarEntradaCartao(botao);
 
             // CORREÇÃO: Usar { once: true } para garantir que o listener só executa uma vez
             botao.addEventListener('click', () => responderPergunta(opcao, botao), { once: true });
