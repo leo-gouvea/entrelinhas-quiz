@@ -224,6 +224,19 @@ body.dispositivo-touch .modal-fechar {
     will-change: transform, opacity;
 }
 
+/* No desktop, o conteúdo é reduzido via JS (ajustarEscalaTela) para caber
+   sem rolagem em QUALQUER resolução, em vez de depender de breakpoints
+   fixos que não cobrem todas as combinações de largura x altura. */
+@media (min-width: 768px) {
+    .tela {
+        overflow-y: hidden;
+    }
+
+    .tela .container {
+        transform-origin: top center;
+    }
+}
+
 /* Tela atualmente visível */
 .tela-ativa {
     display: block;
@@ -473,7 +486,6 @@ h1, h2, h3 {
     font-family: 'Unbounded', var(--font-display);
     font-size: clamp(3.2rem, 6.5vw, 6.2rem);
     font-weight: 800;
-    font-style: italic;
     color: var(--color-primary);
     margin-bottom: 0.15rem;
     text-align: center;
@@ -1685,8 +1697,9 @@ h1, h2, h3 {
     }
 
     .titulo-principal {
-        font-size: clamp(2.4rem, 12vw, 3.4rem);
+        font-size: clamp(1.9rem, 10vw, 2.9rem);
         letter-spacing: -0.02em;
+        white-space: nowrap;
     }
 
     .subtitulo {
