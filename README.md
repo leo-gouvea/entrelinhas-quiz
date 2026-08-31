@@ -2,7 +2,7 @@
 
 **Um quiz interativo que treina o olho para reconhecer violência de gênero disfarçada de normalidade.**
 
-🔗 [Jogue aqui](#) · 🎓 Projeto do Prêmio CIEE de Responsabilidade Social — Categoria III (O Lúdico), programa [Se Liga, Moçada!](https://seligamocada.com.br/)
+🔗 [Jogue aqui](#) · 🎓 Projeto desenvolvido para o programa [Se Liga, Moçada!](https://seligamocada.com.br/)
 
 > **TL;DR (EN):** A single-page quiz built with vanilla HTML/CSS/JS that presents 30 real-world scenarios of normalized gender-based violence (gaslighting, coercive control, victim-blaming, workplace discrimination). No framework, no build step — deliberately, so anyone can open the source and understand it. Includes a real anonymous-analytics backend via Google Apps Script, a hand-rolled Canvas-based share-image generator (no html2canvas), and a debugging story below about a CSS/JS animation-timing desync that's a genuinely good technical read.
 
