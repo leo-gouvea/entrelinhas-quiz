@@ -1,7 +1,7 @@
 # Entrelinhas — Você Reconheceria?
 **Um quiz interativo que treina o olho para reconhecer violência de gênero disfarçada de normalidade.**
 
-🔗 [Jogue aqui](#) · 🎓 Projeto para o programa [Se Liga, Moçada!](https://seligamocada.com.br/)
+🔗 [JOGUE AQUI](#) · 🎓 Projeto para o programa [Se Liga, Moçada!](https://seligamocada.com.br/)
 
 ---
 
