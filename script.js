@@ -623,7 +623,7 @@ function ajustarEscalaTela(tela) {
     container.style.transform = 'none';
     const disponivel = tela.clientHeight;
     const necessario = container.scrollHeight;
-    const MARGEM = 12; // px de folga pra garantir que nada fique colado/cortado na borda
+    const MARGEM = 20; // px de folga pra garantir que nada fique colado/cortado na borda
 
     if (necessario > disponivel - MARGEM) {
         const escala = Math.max((disponivel - MARGEM) / necessario, 0.5);
@@ -653,6 +653,24 @@ document.querySelectorAll('img').forEach(img => {
 // de carregar depois da primeira medição e mudar a altura do texto.
 if (document.fonts && document.fonts.ready) {
     document.fonts.ready.then(ajustarEscalaTelaAtiva);
+}
+
+// REDE DE SEGURANÇA: em vez de depender só de eventos pontuais (resize,
+// load, imagem, fonte), observamos diretamente a altura de cada
+// .container com ResizeObserver. Isso recalcula a escala automaticamente
+// e na hora sempre que o conteúdo mudar de tamanho por QUALQUER motivo
+// (nova pergunta, explicação aparecendo, resultado sendo montado,
+// estatística da comunidade chegando depois, etc.) — garante que nenhuma
+// tela fique cortada, principalmente a de resultado/compartilhamento, e
+// que o ajuste aconteça assim que o layout muda, sem esperar o usuário
+// perceber o "pulo".
+if (typeof ResizeObserver !== 'undefined') {
+    document.querySelectorAll('.tela').forEach(tela => {
+        const container = tela.querySelector('.container');
+        if (!container) return;
+        const ro = new ResizeObserver(() => ajustarEscalaTela(tela));
+        ro.observe(container);
+    });
 }
 
 // ==========================================
@@ -779,7 +797,16 @@ function carregarPergunta() {
     situacaoTexto.textContent = '';
     situacaoTexto.classList.remove('cartao-entra-direita', 'cartao-sai-esquerda');
     opcoesContainer.innerHTML = '';
-    feedbackDiv.classList.add('escondido');
+    // CORREÇÃO: em vez de "display:none" (que zera a altura do card de
+    // explicação até o usuário responder), deixamos o espaço já reservado
+    // (invisível, mas ocupando o layout) desde o início da pergunta. Assim
+    // a tela já nasce no tamanho final e a escala não precisa "pular"
+    // quando a explicação aparece.
+    document.getElementById('feedback-titulo').textContent = '\u00A0';
+    document.getElementById('feedback-explicacao').textContent = questao.explicacao;
+    feedbackDiv.classList.remove('correto', 'incorreto');
+    feedbackDiv.classList.remove('escondido');
+    feedbackDiv.classList.add('feedback-reservado');
     document.getElementById('feedback-estatistica').classList.add('escondido');
     const feedbackProgressReset = document.getElementById('feedback-progress');
     feedbackProgressReset.style.transition = 'none';
@@ -819,7 +846,9 @@ function sairCartoesAtuais(aoTerminar) {
     const feedbackDiv = document.getElementById('feedback');
 
     const elementos = [situacaoTexto, ...opcoes];
-    if (!feedbackDiv.classList.contains('escondido')) {
+    // "feedback-reservado" = espaço reservado mas ainda invisível (usuário
+    // não respondeu ainda), não deve entrar na animação de saída.
+    if (!feedbackDiv.classList.contains('escondido') && !feedbackDiv.classList.contains('feedback-reservado')) {
         elementos.push(feedbackDiv);
     }
 
@@ -903,9 +932,15 @@ function responderPergunta(opcao, botaoElemento) {
         });
     }
 
-    // Mostrar explicação
+    // Mostrar explicação (o espaço já estava reservado desde carregarPergunta)
     feedbackExplicacao.textContent = questao.explicacao;
-    feedbackDiv.classList.remove('escondido');
+    feedbackDiv.classList.remove('escondido', 'feedback-reservado');
+    // Como o card não alterna mais display:none (agora fica reservado via
+    // visibility), forçamos o replay da animação de entrada (fadeIn/scaleIn)
+    // que antes disparava automaticamente ao sair do display:none.
+    feedbackDiv.style.animation = 'none';
+    void feedbackDiv.offsetHeight; // força reflow
+    feedbackDiv.style.animation = '';
     ajustarEscalaTelaAtiva();
 
     // Registra esta resposta na planilha (se configurada) e mostra a
