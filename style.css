@@ -1058,6 +1058,13 @@ h1, h2, h3 {
     display: none !important;
 }
 
+/* Ocupa o espaço no layout (pra escala já considerar essa altura desde o
+   início da pergunta), mas fica visualmente invisível até a resposta. */
+.feedback-reservado {
+    visibility: hidden !important;
+    pointer-events: none !important;
+}
+
 /* ==========================================
    TELA DE LOADING
    ========================================== */
