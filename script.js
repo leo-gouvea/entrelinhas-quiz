@@ -623,9 +623,10 @@ function ajustarEscalaTela(tela) {
     container.style.transform = 'none';
     const disponivel = tela.clientHeight;
     const necessario = container.scrollHeight;
+    const MARGEM = 12; // px de folga pra garantir que nada fique colado/cortado na borda
 
-    if (necessario > disponivel) {
-        const escala = Math.max(disponivel / necessario, 0.5);
+    if (necessario > disponivel - MARGEM) {
+        const escala = Math.max((disponivel - MARGEM) / necessario, 0.5);
         container.style.transform = `scale(${escala})`;
     } else {
         container.style.transform = 'none';
@@ -638,6 +639,21 @@ function ajustarEscalaTelaAtiva() {
 
 window.addEventListener('resize', ajustarEscalaTelaAtiva);
 window.addEventListener('load', ajustarEscalaTelaAtiva);
+
+// As logos (e outras imagens) podem terminar de carregar depois da medição
+// inicial, mudando a altura real do conteúdo sem disparar nenhum dos
+// eventos acima — por isso recalculamos a escala assim que cada imagem
+// da tela ativa termina de carregar.
+document.querySelectorAll('img').forEach(img => {
+    if (img.complete) return;
+    img.addEventListener('load', ajustarEscalaTelaAtiva);
+});
+
+// Fontes customizadas (Unbounded, Fraunces, Caveat) também podem terminar
+// de carregar depois da primeira medição e mudar a altura do texto.
+if (document.fonts && document.fonts.ready) {
+    document.fonts.ready.then(ajustarEscalaTelaAtiva);
+}
 
 // ==========================================
 // LÓGICA DO QUIZ
