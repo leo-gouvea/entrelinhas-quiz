@@ -3,7 +3,7 @@
 **Um quiz interativo que treina o olho para reconhecer violência de gênero disfarçada de normalidade.** 
 🎓 Projeto para o programa [Se Liga, Moçada!](https://seligamocada.com.br/)
 
-# 🔗 [Jogue aqui](https://leo-gouvea.github.io/entrelinhas-quiz/)(#) 
+# 🔗 [Jogue aqui](https://leo-gouvea.github.io/entrelinhas-quiz/)
 
 ---
 
