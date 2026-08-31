@@ -36,7 +36,7 @@ Essa não é uma limitação, é uma escolha. O projeto roda em qualquer navegad
 | Estrutura/estilo | HTML5 + CSS3 puro (custom properties, `clamp()`, Grid/Flexbox) | Zero dependências, controle total |
 | Interatividade | JavaScript vanilla (ES6+) | Sem overhead de framework para uma SPA de 4 telas |
 | Áudio | `Audio()` nativo do navegador, arquivos `.wav` locais | Sem bibliotecas de áudio externas |
-| Imagem de compartilhamento | Canvas API, desenhada manualmente | Ver seção "html2canvas e por que eu abandonei ele" |
+| Imagem de compartilhamento | Canvas API, desenhada manualmente |
 | Estatísticas | Google Sheets + Google Apps Script (Web App) | Backend gratuito, sem servidor próprio, sem banco de dados pra manter |
 | Deploy | GitHub Pages | Estático, gratuito, sem CI/CD necessário |
 
