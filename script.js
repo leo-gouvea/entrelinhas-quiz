@@ -11,12 +11,12 @@ const bancoQuestoes = [
             { texto: "Trata-se de controle mascarado como preocupação", correto: true },
             { texto: "Cada casal define seus próprios limites", correto: false }
         ],
-        explicacao: "Invadir a privacidade da parceira sob o pretexto de 'confiança' ou 'transparência' é uma forma de controle psicológico. Relacionamentos saudáveis respeitam a autonomia e os limites individuais de cada pessoa, incluindo o direito à privacidade.",
+        explicacao: "Invadir a privacidade da parceira sob o pretexto de \"confiança\" ou \"transparência\" é uma forma de controle psicológico. Relacionamentos saudáveis respeitam a autonomia e os limites individuais de cada pessoa, incluindo o direito à privacidade.",
         gravidade: "Alta"
     },
     {
         id: 2,
-        situacao: "Durante uma discussão sobre algo que aconteceu há duas semanas, Pedro olha diretamente para Ana e diz com firmeza: 'Você está inventando isso na sua cabeça. Esse episódio nunca aconteceu da forma que você está contando. Você sempre exagera e distorce as coisas quando fica nervosa.'",
+        situacao: "Durante uma discussão sobre algo que aconteceu há duas semanas, Pedro olha diretamente para Ana e diz com firmeza: \"Você está inventando isso na sua cabeça. Esse episódio nunca aconteceu da forma que você está contando. Você sempre exagera e distorce as coisas quando fica nervosa.\"",
         opcoes: [
             { texto: "Pedro defende sua versão dos fatos", correto: false },
             { texto: "Isso configura gaslighting, manipulação psicológica", correto: true },
@@ -27,7 +27,7 @@ const bancoQuestoes = [
     },
     {
         id: 3,
-        situacao: "Carlos observa a roupa que sua namorada escolheu para sair e comenta com desaprovação: 'Sério que você vai sair assim? Esse decote tá muito chamativo. Não quero que as pessoas pensem mal de você ou do nosso relacionamento. Troca de roupa, por favor.'",
+        situacao: "Carlos observa a roupa que sua namorada escolheu para sair e comenta com desaprovação: \"Sério que você vai sair assim? Esse decote tá muito chamativo. Não quero que as pessoas pensem mal de você ou do nosso relacionamento. Troca de roupa, por favor.\"",
         opcoes: [
             { texto: "Ele se preocupa com a reputação dela", correto: false },
             { texto: "Configura controle sobre autonomia corporal", correto: true },
@@ -38,7 +38,7 @@ const bancoQuestoes = [
     },
     {
         id: 4,
-        situacao: "Durante uma reunião importante com clientes, Mariana está apresentando os resultados do trimestre quando seu colega Ricardo a interrompe no meio da explicação técnica: 'Deixa eu complementar aqui, Mariana. O que ela quis dizer é que...' e passa a reexplicar exatamente o que ela estava dizendo.",
+        situacao: "Durante uma reunião importante com clientes, Mariana está apresentando os resultados do trimestre quando seu colega Ricardo a interrompe no meio da explicação técnica: \"Deixa eu complementar aqui, Mariana. O que ela quis dizer é que...\" e passa a reexplicar exatamente o que ela estava dizendo.",
         opcoes: [
             { texto: "Ricardo quer garantir clareza na comunicação", correto: false },
             { texto: "Mansplaining que invalida a competência dela", correto: true },
@@ -49,7 +49,7 @@ const bancoQuestoes = [
     },
     {
         id: 5,
-        situacao: "No dia seguinte a uma festa, circula nos grupos de WhatsApp um comentário sobre uma conhecida: 'A Fernanda bebeu demais ontem e acabou sendo assediada por aquele cara. Ela tinha que ter mais juízo, né? Sabia que ele era problemático e mesmo assim ficou sozinha com ele.'",
+        situacao: "No dia seguinte a uma festa, circula nos grupos de WhatsApp um comentário sobre uma conhecida: \"A Fernanda bebeu demais ontem e acabou sendo assediada por aquele cara. Ela tinha que ter mais juízo, né? Sabia que ele era problemático e mesmo assim ficou sozinha com ele.\"",
         opcoes: [
             { texto: "Alerta importante sobre comportamento de risco", correto: false },
             { texto: "Culpabilização da vítima por violência sofrida", correto: true },
@@ -60,18 +60,18 @@ const bancoQuestoes = [
     },
     {
         id: 6,
-        situacao: "Toda vez que Juliana senta ao volante do carro do casal, Bruno faz questão de comentar em tom de brincadeira: 'Lá vamos nós... mulher no volante, perigo constante!' Quando ela reclama, ele responde: 'Relaxa, é só uma piada! Todo mundo fala isso, não precisa levar tão a sério.'",
+        situacao: "Toda vez que Juliana senta ao volante do carro do casal, Bruno faz questão de comentar em tom de brincadeira: \"Lá vamos nós... mulher no volante, perigo constante!\" Quando ela reclama, ele responde: \"Relaxa, é só uma piada! Todo mundo fala isso, não precisa levar tão a sério.\"",
         opcoes: [
             { texto: "Piadas inofensivas fazem parte da cultura popular", correto: false },
             { texto: "Humor usado para diminuir capacidade feminina", correto: true },
             { texto: "Ditado tradicional sem conotação pejorativa", correto: false }
         ],
-        explicacao: "Piadas e 'brincadeiras' repetitivas baseadas em estereótipos de gênero são microagressões que sistematicamente desvalorizam e questionam a competência de mulheres. O humor não serve como justificativa para perpetuar preconceito e discriminação.",
+        explicacao: "Piadas e \"brincadeiras\" repetitivas baseadas em estereótipos de gênero são microagressões que sistematicamente desvalorizam e questionam a competência de mulheres. O humor não serve como justificativa para perpetuar preconceito e discriminação.",
         gravidade: "Média"
     },
     {
         id: 7,
-        situacao: "Marcos demonstra desconforto sempre que sua namorada menciona planos com as amigas. Eventualmente, ele expressa: 'Essas suas amigas não fazem bem pra você. Elas vivem te colocando contra mim e te incentivam a sair demais. Acho melhor você se afastar um pouco delas e passar mais tempo comigo e com minha família.'",
+        situacao: "Marcos demonstra desconforto sempre que sua namorada menciona planos com as amigas. Eventualmente, ele expressa: \"Essas suas amigas não fazem bem pra você. Elas vivem te colocando contra mim e te incentivam a sair demais. Acho melhor você se afastar um pouco delas e passar mais tempo comigo e com minha família.\"",
         opcoes: [
             { texto: "Protege o relacionamento de influências externas", correto: false },
             { texto: "Isolamento social como estratégia de controle", correto: true },
@@ -82,7 +82,7 @@ const bancoQuestoes = [
     },
     {
         id: 8,
-        situacao: "Depois de gritar com Júlia durante uma discussão acalorada sobre finanças, Felipe percebe que ela está assustada e visivelmente abalada. Ele então se aproxima, abraça ela e diz com os olhos marejados: 'Me desculpa, amor. Eu só perdi o controle porque te amo demais. Fico muito nervoso quando penso em te perder.'",
+        situacao: "Depois de gritar com Júlia durante uma discussão acalorada sobre finanças, Felipe percebe que ela está assustada e visivelmente abalada. Ele então se aproxima, abraça ela e diz com os olhos marejados: \"Me desculpa, amor. Eu só perdi o controle porque te amo demais. Fico muito nervoso quando penso em te perder.\"",
         opcoes: [
             { texto: "Amor intenso pode provocar reações extremas", correto: false },
             { texto: "Manipulação emocional que justifica agressividade", correto: true },
@@ -93,7 +93,7 @@ const bancoQuestoes = [
     },
     {
         id: 9,
-        situacao: "Durante uma entrevista para uma vaga de gerência, o recrutador observa a aliança de casamento da candidata e pergunta com aparente naturalidade: 'Vi que você é casada. Vocês pretendem ter filhos nos próximos dois ou três anos? Preciso entender seu planejamento familiar para avaliar a adequação ao cargo.'",
+        situacao: "Durante uma entrevista para uma vaga de gerência, o recrutador observa a aliança de casamento da candidata e pergunta com aparente naturalidade: \"Vi que você é casada. Vocês pretendem ter filhos nos próximos dois ou três anos? Preciso entender seu planejamento familiar para avaliar a adequação ao cargo.\"",
         opcoes: [
             { texto: "Questão pertinente para planejamento organizacional", correto: false },
             { texto: "Discriminação de gênero proibida por lei", correto: true },
@@ -115,35 +115,35 @@ const bancoQuestoes = [
     },
     {
         id: 11,
-        situacao: "Em uma festa de aniversário, alguém se aproxima de Carla e comenta em tom de admiração: 'Nossa, você está super bem! Nem parece que já tem 42 anos. Você se cuida muito bem, hein? Parece ter uns 30, no máximo.'",
+        situacao: "Em uma festa de aniversário, alguém se aproxima de Carla e comenta em tom de admiração: \"Nossa, você está super bem! Nem parece que já tem 42 anos. Você se cuida muito bem, hein? Parece ter uns 30, no máximo.\"",
         opcoes: [
             { texto: "Elogio sincero à aparência jovem", correto: false },
             { texto: "Reforça etarismo e padrões irreais de beleza", correto: true },
             { texto: "Forma socialmente aceita de fazer um cumprimento", correto: false }
         ],
-        explicacao: "Esse tipo de 'elogio' implica que existe idade-limite para se ter boa aparência e reforça preconceito etário, especialmente contra mulheres. Beleza não possui prazo de validade, e vincular juventude a valor estético perpetua padrões irreais e discriminatórios.",
+        explicacao: "Esse tipo de \"elogio\" implica que existe idade-limite para se ter boa aparência e reforça preconceito etário, especialmente contra mulheres. Beleza não possui prazo de validade, e vincular juventude a valor estético perpetua padrões irreais e discriminatórios.",
         gravidade: "Baixa"
     },
     {
         id: 12,
-        situacao: "Paula chega em casa animada para contar ao marido sobre sua promoção no trabalho. Ele ouve com expressão neutra e responde: 'Que bom pra você. Mas não esquece que agora você vai ter ainda mais responsabilidade aqui em casa também, né? As crianças e a casa continuam precisando de atenção.'",
+        situacao: "Paula chega em casa animada para contar ao marido sobre sua promoção no trabalho. Ele ouve com expressão neutra e responde: \"Que bom pra você. Mas não esquece que agora você vai ter ainda mais responsabilidade aqui em casa também, né? As crianças e a casa continuam precisando de atenção.\"",
         opcoes: [
             { texto: "Lembrete realista sobre equilíbrio vida-trabalho", correto: false },
             { texto: "Diminuição de conquista reforçando papéis de gênero", correto: true },
             { texto: "Preocupação legítima com divisão de tarefas", correto: false }
         ],
-        explicacao: "Minimizar conquistas profissionais de mulheres e imediatamente lembrá-las de 'suas responsabilidades domésticas' reforça desigualdade de gênero e divisão injusta de trabalho doméstico. Isso desvaloriza realizações femininas e perpetua a ideia de que mulheres são primariamente responsáveis pelo lar.",
+        explicacao: "Minimizar conquistas profissionais de mulheres e imediatamente lembrá-las de \"suas responsabilidades domésticas\" reforça desigualdade de gênero e divisão injusta de trabalho doméstico. Isso desvaloriza realizações femininas e perpetua a ideia de que mulheres são primariamente responsáveis pelo lar.",
         gravidade: "Média"
     },
     {
         id: 13,
-        situacao: "Em uma roda de amigos, André comenta sobre a ex-namorada: 'Ela era muito sensível, vivia chorando e fazendo drama por qualquer coisinha. Mulher é tudo histérica mesmo, né? Não dá pra levar a sério quando elas ficam emotivas.'",
+        situacao: "Em uma roda de amigos, André comenta sobre a ex-namorada: \"Ela era muito sensível, vivia chorando e fazendo drama por qualquer coisinha. Mulher é tudo histérica mesmo, né? Não dá pra levar a sério quando elas ficam emotivas.\"",
         opcoes: [
             { texto: "Observação baseada em experiência pessoal", correto: false },
             { texto: "Invalida emoções femininas através de estereótipo", correto: true },
             { texto: "Crítica ao comportamento específico da ex", correto: false }
         ],
-        explicacao: "Rotular mulheres como 'histéricas' ou 'dramáticas' por expressarem emoções é uma forma de invalidação emocional baseada em estereótipos sexistas. Isso deslegitima sentimentos e experiências femininas, impedindo que sejam levadas a sério.",
+        explicacao: "Rotular mulheres como \"histéricas\" ou \"dramáticas\" por expressarem emoções é uma forma de invalidação emocional baseada em estereótipos sexistas. Isso deslegitima sentimentos e experiências femininas, impedindo que sejam levadas a sério.",
         gravidade: "Média"
     },
     {
@@ -159,18 +159,18 @@ const bancoQuestoes = [
     },
     {
         id: 15,
-        situacao: "Thiago pega o celular de sua namorada enquanto ela está no banho e lê conversas privadas com as amigas. Quando confrontado, ele justifica: 'Se você não tem nada a esconder, por que se importa que eu olhe? Só estava checando se você estava falando mal de mim.'",
+        situacao: "Thiago pega o celular de sua namorada enquanto ela está no banho e lê conversas privadas com as amigas. Quando confrontado, ele justifica: \"Se você não tem nada a esconder, por que se importa que eu olhe? Só estava checando se você estava falando mal de mim.\"",
         opcoes: [
             { texto: "Insegurança justifica necessidade de verificação", correto: false },
             { texto: "Violação de privacidade e invasão de confiança", correto: true },
             { texto: "Transparência digital fortalece relacionamentos", correto: false }
         ],
-        explicacao: "Invadir privacidade digital da parceira sem consentimento é violação grave de limites pessoais. A justificativa de 'não ter nada a esconder' inverte a lógica: privacidade é um direito, não algo que precisa ser justificado ou conquistado.",
+        explicacao: "Invadir privacidade digital da parceira sem consentimento é violação grave de limites pessoais. A justificativa de \"não ter nada a esconder\" inverte a lógica: privacidade é um direito, não algo que precisa ser justificado ou conquistado.",
         gravidade: "Alta"
     },
     {
         id: 16,
-        situacao: "Durante o jantar em família, o sogro de Camila comenta: 'Quando você vai dar um neto pro meu filho? Vocês já estão casados há três anos. Você não tá ficando nova não, viu? Depois fica difícil engravidar.'",
+        situacao: "Durante o jantar em família, o sogro de Camila comenta: \"Quando você vai dar um neto pro meu filho? Vocês já estão casados há três anos. Você não tá ficando nova não, viu? Depois fica difícil engravidar.\"",
         opcoes: [
             { texto: "Preocupação familiar legítima com descendência", correto: false },
             { texto: "Pressão social e invasão de decisão reprodutiva", correto: true },
@@ -181,18 +181,18 @@ const bancoQuestoes = [
     },
     {
         id: 17,
-        situacao: "Renata está falando sobre sua experiência com machismo no trabalho quando seu namorado interrompe: 'Você exagera. Machismo não existe mais, as mulheres hoje têm os mesmos direitos. Você que interpreta tudo como ataque.'",
+        situacao: "Renata está falando sobre sua experiência com machismo no trabalho quando seu namorado interrompe: \"Você exagera. Machismo não existe mais, as mulheres hoje têm os mesmos direitos. Você que interpreta tudo como ataque.\"",
         opcoes: [
             { texto: "Oferece perspectiva alternativa sobre igualdade", correto: false },
             { texto: "Invalida experiência vivida através de negação", correto: true },
             { texto: "Questiona interpretação subjetiva de eventos", correto: false }
         ],
-        explicacao: "Negar a existência de discriminação que outra pessoa vivencia e acusá-la de 'exagero' ou 'interpretação errada' é invalidação de experiência. Isso silencia vítimas e perpetua a invisibilização de violências sistêmicas.",
+        explicacao: "Negar a existência de discriminação que outra pessoa vivencia e acusá-la de \"exagero\" ou \"interpretação errada\" é invalidação de experiência. Isso silencia vítimas e perpetua a invisibilização de violências sistêmicas.",
         gravidade: "Média"
     },
     {
         id: 18,
-        situacao: "Laura é a única mulher em uma reunião executiva. Quando ela começa a falar, é repetidamente interrompida por colegas homens. Quando um deles repete exatamente sua ideia minutos depois, todos elogiam a 'brilhante contribuição dele'.",
+        situacao: "Laura é a única mulher em uma reunião executiva. Quando ela começa a falar, é repetidamente interrompida por colegas homens. Quando um deles repete exatamente sua ideia minutos depois, todos elogiam a \"brilhante contribuição dele\".",
         opcoes: [
             { texto: "Dinâmica comum em ambientes corporativos competitivos", correto: false },
             { texto: "Apropriação de ideias e silenciamento sistemático", correto: true },
@@ -203,7 +203,7 @@ const bancoQuestoes = [
     },
     {
         id: 19,
-        situacao: "Durante uma festa, um homem encosta repetidamente em Sabrina enquanto dançam, mesmo depois dela se afastar várias vezes. Quando ela finalmente diz que está incomodada, ele responde: 'Que exagero! É assim que se dança, relaxa um pouco.'",
+        situacao: "Durante uma festa, um homem encosta repetidamente em Sabrina enquanto dançam, mesmo depois dela se afastar várias vezes. Quando ela finalmente diz que está incomodada, ele responde: \"Que exagero! É assim que se dança, relaxa um pouco.\"",
         opcoes: [
             { texto: "Diferença de interpretação sobre espaço pessoal", correto: false },
             { texto: "Assédio com invalidação do desconforto dela", correto: true },
@@ -214,7 +214,7 @@ const bancoQuestoes = [
     },
     {
         id: 20,
-        situacao: "Priscila é médica cirurgiã. Pacientes frequentemente entram no consultório, olham para ela e perguntam: 'O médico já vai chegar?' Quando ela esclarece que ela é a médica, muitos demonstram surpresa ou desconfiança visível.",
+        situacao: "Priscila é médica cirurgiã. Pacientes frequentemente entram no consultório, olham para ela e perguntam: \"O médico já vai chegar?\" Quando ela esclarece que ela é a médica, muitos demonstram surpresa ou desconfiança visível.",
         opcoes: [
             { texto: "Expectativa razoável baseada em estatísticas da área", correto: false },
             { texto: "Preconceito de gênero que questiona autoridade", correto: true },
@@ -225,7 +225,7 @@ const bancoQuestoes = [
     },
     {
         id: 21,
-        situacao: "Daniela conta ao namorado que um colega de trabalho fez comentários desconfortáveis sobre seu corpo. Ele responde irritado: 'Você deve ter dado mole. Por que você usa essas roupas justas? Depois reclama que os caras ficam olhando.'",
+        situacao: "Daniela conta ao namorado que um colega de trabalho fez comentários desconfortáveis sobre seu corpo. Ele responde irritado: \"Você deve ter dado mole. Por que você usa essas roupas justas? Depois reclama que os caras ficam olhando.\"",
         opcoes: [
             { texto: "Alerta sobre como comportamento pode ser interpretado", correto: false },
             { texto: "Culpabilização que transfere responsabilidade ao assediador", correto: true },
@@ -236,7 +236,7 @@ const bancoQuestoes = [
     },
     {
         id: 22,
-        situacao: "Quando Vanessa expressa opinião política diferente do marido durante um jantar com amigos, ele a interrompe e diz em tom condescendente: 'Meu amor, você não entende bem desse assunto. Deixa eu explicar como funciona de verdade.'",
+        situacao: "Quando Vanessa expressa opinião política diferente do marido durante um jantar com amigos, ele a interrompe e diz em tom condescendente: \"Meu amor, você não entende bem desse assunto. Deixa eu explicar como funciona de verdade.\"",
         opcoes: [
             { texto: "Correção respeitosa de informação imprecisa", correto: false },
             { texto: "Desautorização pública que infantiliza a parceira", correto: true },
@@ -247,7 +247,7 @@ const bancoQuestoes = [
     },
     {
         id: 23,
-        situacao: "Gustavo controla todas as senhas das redes sociais da namorada e exige que ela lhe mostre todas as conversas. Ele explica: 'É pra nossa proteção. Assim ninguém consegue criar problema entre a gente. Se você me ama de verdade, não vai se importar.'",
+        situacao: "Gustavo controla todas as senhas das redes sociais da namorada e exige que ela lhe mostre todas as conversas. Ele explica: \"É pra nossa proteção. Assim ninguém consegue criar problema entre a gente. Se você me ama de verdade, não vai se importar.\"",
         opcoes: [
             { texto: "Medida preventiva para proteger relacionamento", correto: false },
             { texto: "Controle digital coercitivo e manipulação emocional", correto: true },
@@ -269,18 +269,18 @@ const bancoQuestoes = [
     },
     {
         id: 25,
-        situacao: "Sofia descobre que ganha 30% menos que colegas homens exercendo a mesma função e com qualificações similares. Quando questiona o gestor, ele explica: 'Eles têm família pra sustentar. Você ainda mora com os pais, não precisa tanto.'",
+        situacao: "Sofia descobre que ganha 30% menos que colegas homens exercendo a mesma função e com qualificações similares. Quando questiona o gestor, ele explica: \"Eles têm família pra sustentar. Você ainda mora com os pais, não precisa tanto.\"",
         opcoes: [
             { texto: "Ajuste salarial baseado em necessidade individual", correto: false },
             { texto: "Discriminação salarial ilegal baseada em gênero", correto: true },
             { texto: "Critério legítimo de diferenciação remuneratória", correto: false }
         ],
-        explicacao: "Pagar salários diferentes para pessoas exercendo mesma função com qualificações equivalentes, baseando-se em gênero ou supostas 'necessidades pessoais', é discriminação salarial ilegal. Remuneração deve basear-se no trabalho realizado, não em características pessoais.",
+        explicacao: "Pagar salários diferentes para pessoas exercendo mesma função com qualificações equivalentes, baseando-se em gênero ou supostas \"necessidades pessoais\", é discriminação salarial ilegal. Remuneração deve basear-se no trabalho realizado, não em características pessoais.",
         gravidade: "Alta"
     },
     {
         id: 26,
-        situacao: "Quando Helena critica comportamento controlador do namorado, ele responde: 'Você tá igual sua mãe, sempre reclamando de tudo. Por isso seu pai largou ela. Quer que eu faça o mesmo com você?' Depois disso, Helena evita tocar no assunto.",
+        situacao: "Quando Helena critica comportamento controlador do namorado, ele responde: \"Você tá igual sua mãe, sempre reclamando de tudo. Por isso seu pai largou ela. Quer que eu faça o mesmo com você?\" Depois disso, Helena evita tocar no assunto.",
         opcoes: [
             { texto: "Comparação que ajuda reflexão sobre padrões", correto: false },
             { texto: "Ameaça velada que silencia através de medo", correto: true },
@@ -302,7 +302,7 @@ const bancoQuestoes = [
     },
     {
         id: 28,
-        situacao: "Depois de uma crise de ciúmes onde quebrou objetos da casa, Leonardo chora e implora perdão a Isabela: 'Eu não queria te assustar, mas quando penso em te perder eu enlouqueço. Você é tudo pra mim. Prometo que vou mudar, mas não me abandona agora.'",
+        situacao: "Depois de uma crise de ciúmes onde quebrou objetos da casa, Leonardo chora e implora perdão a Isabela: \"Eu não queria te assustar, mas quando penso em te perder eu enlouqueço. Você é tudo pra mim. Prometo que vou mudar, mas não me abandona agora.\"",
         opcoes: [
             { texto: "Demonstração sincera de arrependimento e amor", correto: false },
             { texto: "Ciclo de violência com manipulação emocional", correto: true },
@@ -313,7 +313,7 @@ const bancoQuestoes = [
     },
     {
         id: 29,
-        situacao: "Fernanda está participando de um happy hour corporativo quando o diretor se aproxima, coloca a mão em sua cintura e diz próximo ao ouvido: 'Você está linda hoje. Se quiser crescer aqui na empresa, a gente podia conversar melhor em outro ambiente.'",
+        situacao: "Fernanda está participando de um happy hour corporativo quando o diretor se aproxima, coloca a mão em sua cintura e diz próximo ao ouvido: \"Você está linda hoje. Se quiser crescer aqui na empresa, a gente podia conversar melhor em outro ambiente.\"",
         opcoes: [
             { texto: "Elogio profissional com oferta de mentoria", correto: false },
             { texto: "Assédio sexual com insinuação de chantagem", correto: true },
@@ -324,16 +324,49 @@ const bancoQuestoes = [
     },
     {
         id: 30,
-        situacao: "Amanda divide apartamento com o namorado. Ele trabalha 8 horas por dia, ela trabalha 8 horas por dia. Chegando em casa, ela cozinha, limpa e lava, enquanto ele joga videogame. Quando ela reclama, ele diz: 'Mas eu lavo o banheiro todo sábado. Você quer o quê? Que eu vire doméstica?'",
+        situacao: "Amanda divide apartamento com o namorado. Ele trabalha 8 horas por dia, ela trabalha 8 horas por dia. Chegando em casa, ela cozinha, limpa e lava, enquanto ele joga videogame. Quando ela reclama, ele diz: \"Mas eu lavo o banheiro todo sábado. Você quer o quê? Que eu vire doméstica?\"",
         opcoes: [
             { texto: "Divisão de tarefas baseada em preferências pessoais", correto: false },
             { texto: "Sobrecarga doméstica feminina e desvalorização do trabalho", correto: true },
             { texto: "Cada um contribui conforme suas habilidades naturais", correto: false }
         ],
-        explicacao: "Esperar que mulheres assumam desproporcionalmente tarefas domésticas mesmo trabalhando as mesmas horas é perpetuação da divisão sexual do trabalho. Chamar trabalho doméstico de 'coisa de doméstica' revela desprezo por atividade historicamente feminizada e essencial.",
+        explicacao: "Esperar que mulheres assumam desproporcionalmente tarefas domésticas mesmo trabalhando as mesmas horas é perpetuação da divisão sexual do trabalho. Chamar trabalho doméstico de \"coisa de doméstica\" revela desprezo por atividade historicamente feminizada e essencial.",
         gravidade: "Média"
     }
 ];
+
+// ==========================================
+// SEGURANÇA BÁSICA
+// ==========================================
+
+const URL_APPS_SCRIPT = 'https://script.google.com/macros/s/AKfycbxa2Cs0S-DsaX7vb5Et2072VqDyiFratGLsUi7wa9DT_a14lMcpD7By4gIqW9KDcsU9UA/exec';
+
+function isSafeAppsScriptUrl(url) {
+    return typeof url === 'string' && url.startsWith('https://script.google.com/macros/s/') && url.length < 300;
+}
+
+function sanitizarTexto(texto) {
+    return String(texto ?? '').replace(/[<>]/g, '').trim();
+}
+
+const frasesLegaisIntro = [
+    'Seguindo a Lei Maria da Penha e outras leis de proteção à mulher.',
+    'Em defesa das leis que protegem vida, dignidade e segurança.',
+    'A violência não é detalhe: é crime, é pauta legal e coletiva.'
+];
+
+function escolherFraseLegal(lista) {
+    return lista[Math.floor(Math.random() * lista.length)];
+}
+
+function atualizarFrasesLegais() {
+    const intro = document.getElementById('frase-legal-intro');
+
+    if (intro) {
+        intro.textContent = escolherFraseLegal(frasesLegaisIntro);
+    }
+
+}
 
 // ==========================================
 // VARIÁVEIS GLOBAIS
@@ -343,106 +376,145 @@ let questoesAtivas = []; // 12 questões sorteadas para este quiz
 let indicePerguntaAtual = 0;
 let respostasUsuario = [];
 let pontuacaoTotal = 0;
-let html2canvasCarregado = false;
 let respostaBloqueada = false; // Prevenir cliques múltiplos
+let podeTocarSomCard = true; // Controla se os sons de hover/chegada dos cards podem tocar
 
 // ==========================================
-// WEB AUDIO API - SISTEMA DE SONS
+// ESTATÍSTICAS REAIS (Google Sheets via Apps Script)
 // ==========================================
 
-const AudioContextClass = window.AudioContext || window.webkitAudioContext || window.mozAudioContext;
-const audioContext = new AudioContextClass();
+// Cache local das estatísticas agregadas: { [questaoId]: { total, erros } }
+let estatisticasComunidade = {};
+let estatisticasCarregadas = false;
 
-function playSwipeSound() {
-    const oscillator = audioContext.createOscillator();
-    const gainNode = audioContext.createGain();
+// Busca as estatísticas agregadas assim que a página carrega. Se a URL não
+// estiver configurada, ou a planilha estiver fora do ar, falha em silêncio
+// e o site segue funcionando normalmente (a estatística real é só um bônus).
+async function carregarEstatisticasComunidade() {
+    if (!URL_APPS_SCRIPT || !isSafeAppsScriptUrl(URL_APPS_SCRIPT)) return;
 
-    oscillator.connect(gainNode);
-    gainNode.connect(audioContext.destination);
+    try {
+        const resposta = await fetch(URL_APPS_SCRIPT, {
+            method: 'GET',
+            cache: 'no-store',
+            headers: { 'Accept': 'application/json' }
+        });
 
-    oscillator.frequency.setValueAtTime(400, audioContext.currentTime);
-    oscillator.frequency.exponentialRampToValueAtTime(200, audioContext.currentTime + 0.1);
+        if (!resposta.ok) return;
 
-    gainNode.gain.setValueAtTime(0.1, audioContext.currentTime);
-    gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.1);
+        const texto = await resposta.text();
+        let dados = {};
 
-    oscillator.start(audioContext.currentTime);
-    oscillator.stop(audioContext.currentTime + 0.1);
+        try {
+            dados = JSON.parse(texto);
+        } catch (erro) {
+            console.warn('Resposta da comunidade não é JSON válido:', texto);
+            return;
+        }
+
+        if (dados.ok && dados.estatisticas) {
+            estatisticasComunidade = dados.estatisticas;
+            estatisticasCarregadas = true;
+            atualizarResumoEstatisticasComunidade();
+        }
+    } catch (erro) {
+        console.warn('Estatísticas da comunidade indisponíveis:', erro);
+    }
 }
 
-function playCorrectSound() {
-    const oscillator = audioContext.createOscillator();
-    const gainNode = audioContext.createGain();
+function atualizarResumoEstatisticasComunidade() {
+    const bloco = document.getElementById('estatisticas-comunidade');
+    const texto = document.getElementById('estatisticas-comunidade-texto');
+    if (!bloco || !texto) return;
 
-    oscillator.connect(gainNode);
-    gainNode.connect(audioContext.destination);
+    let totalRespostas = 0;
+    let totalErros = 0;
 
-    oscillator.type = 'sine';
-    oscillator.frequency.setValueAtTime(523.25, audioContext.currentTime); // C5
-    oscillator.frequency.setValueAtTime(659.25, audioContext.currentTime + 0.1); // E5
-    oscillator.frequency.setValueAtTime(783.99, audioContext.currentTime + 0.2); // G5
+    Object.values(estatisticasComunidade).forEach(dados => {
+        if (!dados || typeof dados.total !== 'number') return;
+        totalRespostas += dados.total;
+        totalErros += dados.erros || 0;
+    });
 
-    gainNode.gain.setValueAtTime(0.15, audioContext.currentTime);
-    gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.3);
+    if (!estatisticasCarregadas || totalRespostas === 0) {
+        bloco.classList.add('escondido');
+        return;
+    }
 
-    oscillator.start(audioContext.currentTime);
-    oscillator.stop(audioContext.currentTime + 0.3);
+    const percentualErroMedio = Math.round((totalErros / totalRespostas) * 100);
+    texto.textContent = `${totalRespostas} pessoas já jogaram • ${percentualErroMedio}% de erro médio da comunidade`;
+    bloco.classList.remove('escondido');
 }
 
-function playIncorrectSound() {
-    const oscillator = audioContext.createOscillator();
-    const gainNode = audioContext.createGain();
+carregarEstatisticasComunidade();
 
-    oscillator.connect(gainNode);
-    gainNode.connect(audioContext.destination);
+// Envia o resultado de uma resposta pra planilha, sem travar a interface
+// esperando resposta (fire-and-forget). 'no-cors' porque o Apps Script não
+// devolve cabeçalhos CORS em POST; não precisamos ler a resposta, só enviar.
+function registrarRespostaComunidade(questaoId, correto) {
+    if (!URL_APPS_SCRIPT || !isSafeAppsScriptUrl(URL_APPS_SCRIPT)) return;
 
-    oscillator.type = 'sawtooth';
-    oscillator.frequency.setValueAtTime(200, audioContext.currentTime);
-    oscillator.frequency.exponentialRampToValueAtTime(100, audioContext.currentTime + 0.3);
-
-    gainNode.gain.setValueAtTime(0.1, audioContext.currentTime);
-    gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.3);
-
-    oscillator.start(audioContext.currentTime);
-    oscillator.stop(audioContext.currentTime + 0.3);
+    try {
+        fetch(URL_APPS_SCRIPT, {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+            body: JSON.stringify({ questaoId, correto })
+        });
+    } catch (erro) {
+        console.warn('Não foi possível registrar a resposta:', erro);
+    }
 }
 
-function playResultSound(scorePercentual) {
-    const oscillator = audioContext.createOscillator();
-    const gainNode = audioContext.createGain();
+// ==========================================
+// SISTEMA DE SONS (arquivos locais)
+// ==========================================
 
-    oscillator.connect(gainNode);
-    gainNode.connect(audioContext.destination);
+const sons = {
+    swipe: new Audio('sons/cardSwipe.wav'),
+    chegando: new Audio('sons/cardArriving.wav'),
+    correto: new Audio('sons/cardSelect.wav'),
+    incorreto: new Audio('sons/error.wav'),
+    complete: new Audio('sons/complete.wav')
+};
 
-    // Som varia com o score: maior score = frequência mais alta e duração mais longa
-    const baseFreq = 300 + (scorePercentual * 3); // 300Hz a 600Hz
-    const duration = 0.5 + (scorePercentual / 100); // 0.5s a 1.5s
+Object.values(sons).forEach(audio => {
+    audio.preload = 'auto';
+    audio.volume = 0.5;
+});
 
-    oscillator.type = 'triangle';
-    oscillator.frequency.setValueAtTime(baseFreq, audioContext.currentTime);
-    oscillator.frequency.exponentialRampToValueAtTime(baseFreq * 1.5, audioContext.currentTime + duration);
+const audioLocks = {};
 
-    gainNode.gain.setValueAtTime(0.15, audioContext.currentTime);
-    gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + duration);
+function tocarSom(audioBase, volume = 0.5, chave = 'padrao', cooldown = 180) {
+    const agora = performance.now();
+    if (audioLocks[chave] && agora - audioLocks[chave] < cooldown) {
+        return;
+    }
 
-    oscillator.start(audioContext.currentTime);
-    oscillator.stop(audioContext.currentTime + duration);
+    audioLocks[chave] = agora;
+    const instancia = audioBase.cloneNode();
+    instancia.volume = Math.min(Math.max(volume, 0), 1);
+    instancia.play().catch(() => {});
 }
 
 function playHoverSound() {
-    const oscillator = audioContext.createOscillator();
-    const gainNode = audioContext.createGain();
+    tocarSom(sons.swipe, 0.22, 'hover', 220);
+}
 
-    oscillator.connect(gainNode);
-    gainNode.connect(audioContext.destination);
+function playSwipeSound() {
+    tocarSom(sons.chegando, 0.3, 'swipe', 220);
+}
 
-    oscillator.frequency.setValueAtTime(600, audioContext.currentTime);
+function playCorrectSound() {
+    tocarSom(sons.correto, 0.38, 'correct', 250);
+}
 
-    gainNode.gain.setValueAtTime(0.03, audioContext.currentTime);
-    gainNode.gain.exponentialRampToValueAtTime(0.01, audioContext.currentTime + 0.05);
+function playIncorrectSound() {
+    tocarSom(sons.incorreto, 0.34, 'incorrect', 250);
+}
 
-    oscillator.start(audioContext.currentTime);
-    oscillator.stop(audioContext.currentTime + 0.05);
+function playResultSound(scorePercentual) {
+    tocarSom(sons.complete, 0.4, 'result', 400);
 }
 
 // ==========================================
@@ -450,113 +522,137 @@ function playHoverSound() {
 // ==========================================
 
 const cursor = document.getElementById('custom-cursor');
+const ehDispositivoTouch = window.matchMedia('(hover: none), (pointer: coarse)').matches;
+if (ehDispositivoTouch) {
+    document.body.classList.add('dispositivo-touch');
+    if (cursor) cursor.style.display = 'none';
+}
 
 document.addEventListener('mousemove', (e) => {
+    if (!cursor) return;
     cursor.style.left = e.clientX + 'px';
     cursor.style.top = e.clientY + 'px';
 });
 
-// Adicionar classe hover em elementos clicáveis
-function atualizarEventosCursor() {
-    // Usar delegação de eventos para evitar acúmulo de listeners
-    document.body.addEventListener('mouseenter', (e) => {
-        if (e.target.matches('button, a, .botao, .botao-opcao')) {
-            cursor.classList.add('hover');
-            playHoverSound();
-        }
-    }, true);
+let ultimoHoverAt = 0;
+document.body.addEventListener('pointerover', (e) => {
+    const alvo = e.target.closest ? e.target.closest('button, a, .botao, .botao-opcao') : null;
+    if (!alvo) return;
+    if (!cursor) return;
 
-    document.body.addEventListener('mouseleave', (e) => {
-        if (e.target.matches('button, a, .botao, .botao-opcao')) {
-            cursor.classList.remove('hover');
-        }
-    }, true);
-}
+    const agora = performance.now();
+    cursor.classList.add('hover');
+    if (podeTocarSomCard && agora - ultimoHoverAt > 220) {
+        ultimoHoverAt = agora;
+        playHoverSound();
+    }
+}, { capture: true });
 
-// Chamar apenas uma vez na inicialização
-atualizarEventosCursor();
-
-// ==========================================
-// NAVEGAÇÃO ENTRE TELAS COM ANIMAÇÃO SLIDE
-// ==========================================
+document.body.addEventListener('pointerout', (e) => {
+    const alvo = e.target.closest ? e.target.closest('button, a, .botao, .botao-opcao') : null;
+    if (!alvo) return;
+    if (!cursor) return;
+    cursor.classList.remove('hover');
+}, { capture: true });
 
 function mostrarTela(idTela, direcao = 'direita') {
     const telaAtual = document.querySelector('.tela-ativa');
+    const novaTela = document.getElementById(idTela);
 
-    playSwipeSound();
+    if (!novaTela) {
+        console.error(`Tela não encontrada: ${idTela}`);
+        return;
+    }
 
-    if (telaAtual) {
+    if (telaAtual && telaAtual !== novaTela) {
         telaAtual.classList.remove('tela-ativa');
+        telaAtual.classList.remove('entrando-direita', 'entrando-esquerda');
+        telaAtual.classList.remove('tela-saindo-esquerda', 'tela-saindo-direita');
 
-        // Animação especial: tela-inicio sai para cima quando vai para tela-quiz
-        if (telaAtual.id === 'tela-inicio' && idTela === 'tela-quiz') {
-            telaAtual.classList.add('tela-saindo-cima');
-
-            // Mudar cor de fundo durante a animação
-            setTimeout(() => {
-                document.body.classList.add('quiz-ativo');
-            }, 300);
-
-            setTimeout(() => {
-                telaAtual.classList.remove('tela-saindo-cima');
-                telaAtual.style.display = 'none';
-                telaAtual.style.transform = ''; // Limpar transform para evitar retorno
-            }, 600);
+        if (direcao === 'direita') {
+            telaAtual.classList.add('tela-saindo-esquerda');
         } else {
-            // Animações normais para outras transições
-            const classeSaida = direcao === 'direita' ? 'tela-saindo-esquerda' : 'tela-saindo-direita';
-            telaAtual.classList.add(classeSaida);
-
-            setTimeout(() => {
-                telaAtual.classList.remove('tela-saindo-esquerda', 'tela-saindo-direita');
-                telaAtual.style.display = 'none';
-                telaAtual.style.transform = ''; // Limpar transform
-            }, 400);
-
-            // Remover cor de fundo roxa ao sair do quiz
-            if (telaAtual.id === 'tela-quiz' || telaAtual.id === 'tela-loading') {
-                document.body.classList.remove('quiz-ativo');
-            }
+            telaAtual.classList.add('tela-saindo-direita');
         }
     }
 
-    // Delay apropriado baseado na animação de saída
-    const delay = (telaAtual && telaAtual.id === 'tela-inicio' && idTela === 'tela-quiz') ? 600 : 400;
+    novaTela.classList.remove('tela-saindo-esquerda', 'tela-saindo-direita', 'entrando-direita', 'entrando-esquerda');
+    novaTela.classList.add('tela-ativa');
+
+    if (direcao === 'direita') {
+        novaTela.classList.add('entrando-direita');
+    } else {
+        novaTela.classList.add('entrando-esquerda');
+    }
 
     setTimeout(() => {
-        const novaTela = document.getElementById(idTela);
-        novaTela.style.display = 'flex';
-        novaTela.style.alignItems = 'center';
-        novaTela.style.justifyContent = 'center';
-
-        // Tela-quiz sempre entra de baixo quando vem da tela-inicio
-        if (idTela === 'tela-quiz' && telaAtual && telaAtual.id === 'tela-inicio') {
-            novaTela.classList.add('entrando-baixo');
-            setTimeout(() => {
-                novaTela.classList.remove('entrando-baixo');
-                novaTela.classList.add('tela-ativa');
-            }, 50);
-        } else {
-            // Animações normais para outras transições
-            const classeEntrada = direcao === 'direita' ? 'entrando-direita' : 'entrando-esquerda';
-            novaTela.classList.add(classeEntrada);
-
-            setTimeout(() => {
-                novaTela.classList.remove('entrando-direita', 'entrando-esquerda');
-                novaTela.classList.add('tela-ativa');
-            }, 50);
+        if (telaAtual && telaAtual !== novaTela) {
+            telaAtual.classList.remove('tela-saindo-esquerda', 'tela-saindo-direita');
+            telaAtual.style.display = 'none';
         }
-    }, delay);
+        novaTela.classList.remove('entrando-direita', 'entrando-esquerda');
+        novaTela.classList.add('tela-ativa');
+    }, 800); // CORREÇÃO: tinha que ser 800ms para bater com a duração real da
+             // animação CSS (0.8s) — estava em 420ms, cortando a animação no
+             // meio e causando o "teleporte"/corte perceptível no final.
 }
 
 // ==========================================
 // LÓGICA DO QUIZ
 // ==========================================
 
+// Embaralha um array sem alterar o original (Fisher-Yates)
+function embaralharArray(array) {
+    const copia = [...array];
+    for (let i = copia.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [copia[i], copia[j]] = [copia[j], copia[i]];
+    }
+    return copia;
+}
+
 function selecionarQuestoesAleatorias() {
     // Embaralha banco completo e pega 12 questões
-    const embaralhado = [...bancoQuestoes].sort(() => Math.random() - 0.5);
-    return embaralhado.slice(0, 12);
+    const questoesEscolhidas = embaralharArray(bancoQuestoes).slice(0, 12);
+
+    // Para cada questão, embaralha também a ordem das opções, para que a
+    // alternativa correta não fique sempre na mesma posição (ex: sempre a do meio).
+    // Cria uma cópia da questão para não alterar o banco original.
+    return questoesEscolhidas.map(questao => ({
+        ...questao,
+        opcoes: embaralharArray(questao.opcoes)
+    }));
+}
+
+function renderizarSituacao(elemento, texto) {
+    // Reconhece falas entre aspas duplas retas ("...") ou aspas curvas (“...”)
+    const partes = texto.split(/("[^"]+"|“[^”]+”)/g);
+
+    partes.forEach((parte, index) => {
+        if (!parte) return;
+
+        if (index % 2 === 1) {
+            const destaque = document.createElement('strong');
+            destaque.className = 'fala-destaque';
+            destaque.textContent = parte;
+            elemento.appendChild(destaque);
+        } else {
+            elemento.appendChild(document.createTextNode(parte));
+        }
+    });
+}
+
+function animarEntradaCartao(elemento) {
+    elemento.classList.add('cartao-entra-direita');
+    let animacaoFinalizada = false;
+    const limparAnimacao = () => {
+        if (animacaoFinalizada) return;
+        animacaoFinalizada = true;
+        elemento.classList.remove('cartao-entra-direita');
+    };
+
+    elemento.addEventListener('animationend', limparAnimacao, { once: true });
+    setTimeout(limparAnimacao, 650);
 }
 
 function iniciarQuiz() {
@@ -565,9 +661,43 @@ function iniciarQuiz() {
     pontuacaoTotal = 0;
     questoesAtivas = selecionarQuestoesAleatorias();
 
-    mostrarTela('tela-quiz', 'direita');
-    carregarPergunta();
+    // Som de iniciar (mesmo som das cartas)
+    playSwipeSound();
+
+    // ANIMAÇÃO EM 3 FASES:
+    // 1. Texto da tela inicial sobe e desaparece
+    const introContainer = document.querySelector('#tela-inicio .container');
+    const telaInicio = document.getElementById('tela-inicio');
+
+    introContainer.classList.add('intro-saindo');
+
+    // 2. Após o texto subir COMPLETAMENTE, oculta a tela inicial e muda o fundo
+    setTimeout(() => {
+        // Ocultar completamente a tela inicial
+        telaInicio.style.opacity = '0';
+        telaInicio.style.visibility = 'hidden';
+
+        // Muda o fundo para roxo escuro
+        document.body.style.transition = 'background-color 0.4s ease';
+        document.body.style.backgroundColor = 'var(--bg-dark)';
+    }, 500);
+
+    // 3. Então troca de tela e os cartões entram da direita
+    setTimeout(() => {
+        introContainer.classList.remove('intro-saindo');
+        telaInicio.style.display = 'none'; // Remove completamente do DOM
+
+        mostrarTela('tela-quiz', 'direita');
+
+        // Pequeno delay para garantir que a tela está pronta
+        setTimeout(() => {
+            carregarPergunta();
+        }, 100);
+    }, 900);
 }
+
+// Tempo entre a entrada de cada cartão (situação + opções) em ms
+const ATRASO_ENTRE_CARTOES = 130;
 
 function carregarPergunta() {
     const questao = questoesAtivas[indicePerguntaAtual];
@@ -579,6 +709,7 @@ function carregarPergunta() {
     const progressoPreenchido = document.getElementById('progresso-preenchido');
 
     respostaBloqueada = false; // Reset do bloqueio de cliques
+    podeTocarSomCard = true; // Reativa sons dos cards para nova questão
 
     // Atualizar progresso
     questaoAtualSpan.textContent = indicePerguntaAtual + 1;
@@ -586,61 +717,95 @@ function carregarPergunta() {
     const percentualProgresso = ((indicePerguntaAtual + 1) / questoesAtivas.length) * 100;
     progressoPreenchido.style.width = percentualProgresso + '%';
 
-    // Limpar conteúdo anterior com animação de saída
-    opcoesContainer.style.opacity = '0';
-    opcoesContainer.style.transform = 'translateX(-50px)';
+    // Limpar conteúdo anterior
+    situacaoTexto.textContent = '';
+    situacaoTexto.classList.remove('cartao-entra-direita', 'cartao-sai-esquerda');
+    opcoesContainer.innerHTML = '';
+    feedbackDiv.classList.add('escondido');
+    document.getElementById('feedback-estatistica').classList.add('escondido');
+    const feedbackProgressReset = document.getElementById('feedback-progress');
+    feedbackProgressReset.style.transition = 'none';
+    feedbackProgressReset.style.width = '100%';
 
+    // Situação entra da direita (primeiro cartão da "estante")
     setTimeout(() => {
-        situacaoTexto.textContent = '';
-        opcoesContainer.innerHTML = '';
-        feedbackDiv.classList.add('escondido');
+        renderizarSituacao(situacaoTexto, questao.situacao);
+        animarEntradaCartao(situacaoTexto);
+        if (podeTocarSomCard) playSwipeSound();
+    }, 0);
 
-        // Resetar e animar situação
-        situacaoTexto.style.opacity = '0';
-        situacaoTexto.textContent = questao.situacao;
-
+    // Cartões de opção entram da direita, um por um, de cima pra baixo
+    questao.opcoes.forEach((opcao, index) => {
         setTimeout(() => {
-            situacaoTexto.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
-            situacaoTexto.style.opacity = '1';
-            situacaoTexto.style.transform = 'translateY(0)';
-        }, 50);
+            const botao = document.createElement('button');
+            botao.classList.add('botao', 'botao-opcao');
+            botao.textContent = opcao.texto;
+            animarEntradaCartao(botao);
 
-        // Criar botões de opções vindos da DIREITA com delay sequencial
-        opcoesContainer.style.opacity = '1';
-        opcoesContainer.style.transform = 'translateX(0)';
-        opcoesContainer.style.transition = 'opacity 0.4s ease, transform 0.4s ease';
+            // CORREÇÃO: Usar { once: true } para garantir que o listener só executa uma vez
+            botao.addEventListener('click', () => responderPergunta(opcao, botao), { once: true });
 
-        questao.opcoes.forEach((opcao, index) => {
-            setTimeout(() => {
-                const botao = document.createElement('button');
-                botao.classList.add('botao', 'botao-opcao');
-                botao.textContent = opcao.texto;
-                botao.style.opacity = '0';
-                botao.style.transform = 'translateX(100px)'; // Vem da DIREITA
+            // CORREÇÃO: Remover event listeners de hover - agora são gerenciados por delegação no body
 
-                // CORREÇÃO: Handler único de clique (sem re-adicionar listeners de hover)
-                botao.addEventListener('click', () => responderPergunta(opcao, botao), { once: true });
+            opcoesContainer.appendChild(botao);
+            if (podeTocarSomCard) playSwipeSound();
+        }, ATRASO_ENTRE_CARTOES * (index + 1));
+    });
+}
 
-                opcoesContainer.appendChild(botao);
+// Anima a saída dos cartões (situação + opções + feedback) para a esquerda,
+// um por um de cima pra baixo, como uma estante de pratos voltando ao lugar.
+function sairCartoesAtuais(aoTerminar) {
+    const situacaoTexto = document.getElementById('situacao-texto');
+    const opcoes = Array.from(document.querySelectorAll('.botao-opcao'));
+    const feedbackDiv = document.getElementById('feedback');
 
-                // Animar entrada da direita
-                setTimeout(() => {
-                    botao.style.transition = 'opacity 0.4s ease, transform 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)';
-                    botao.style.opacity = '1';
-                    botao.style.transform = 'translateX(0)';
-                }, 50);
-            }, 400 + (index * 150));
-        });
-    }, 200);
+    const elementos = [situacaoTexto, ...opcoes];
+    if (!feedbackDiv.classList.contains('escondido')) {
+        elementos.push(feedbackDiv);
+    }
 
-    // CORREÇÃO: Event listeners de cursor adicionados uma única vez via delegação
-    // Remover chamada para atualizarEventosCursor() que reaplicava listeners
+    elementos.forEach((el, index) => {
+        setTimeout(() => {
+            el.classList.add('cartao-sai-esquerda');
+        }, index * ATRASO_ENTRE_CARTOES);
+    });
+
+    const duracaoSaida = (elementos.length - 1) * ATRASO_ENTRE_CARTOES + 500;
+    setTimeout(aoTerminar, duracaoSaida);
+}
+
+// Mostra "X% de quem respondeu essa questão também errou", usando dados reais
+// da planilha — só exibe quando já há uma amostra mínima (evita estatística
+// enganosa tipo "100% erraram" com base em 1 ou 2 respostas).
+const AMOSTRA_MINIMA_ESTATISTICA = 5;
+
+function exibirEstatisticaComunidade(questaoId, respostaCorreta) {
+    const elemento = document.getElementById('feedback-estatistica');
+    const dados = estatisticasComunidade[questaoId];
+
+    if (!estatisticasCarregadas || !dados || dados.total < AMOSTRA_MINIMA_ESTATISTICA) {
+        elemento.classList.add('escondido');
+        return;
+    }
+
+    if (respostaCorreta) {
+        const percentualAcerto = Math.round(((dados.total - dados.erros) / dados.total) * 100);
+        elemento.textContent = `📊 ${percentualAcerto}% de quem já respondeu essa questão também acertou.`;
+    } else {
+        const percentualErro = Math.round((dados.erros / dados.total) * 100);
+        elemento.textContent = `📊 ${percentualErro}% de quem já respondeu essa questão também errou.`;
+    }
+    elemento.classList.remove('escondido');
 }
 
 function responderPergunta(opcao, botaoElemento) {
     // Prevenir cliques múltiplos
     if (respostaBloqueada) return;
     respostaBloqueada = true;
+
+    // CORREÇÃO: Desativa sons dos cards após responder
+    podeTocarSomCard = false;
 
     const questao = questoesAtivas[indicePerguntaAtual];
     const todosOsBotoes = document.querySelectorAll('.botao-opcao');
@@ -651,7 +816,7 @@ function responderPergunta(opcao, botaoElemento) {
     // Desabilitar todos os botões
     todosOsBotoes.forEach(btn => btn.disabled = true);
 
-    // Marcar resposta e tocar som (SEM OVERLAP)
+    // Marcar resposta e tocar som
     if (opcao.correto) {
         botaoElemento.classList.add('correto');
         feedbackDiv.classList.remove('incorreto');
@@ -683,6 +848,22 @@ function responderPergunta(opcao, botaoElemento) {
     feedbackExplicacao.textContent = questao.explicacao;
     feedbackDiv.classList.remove('escondido');
 
+    // Registra esta resposta na planilha (se configurada) e mostra a
+    // estatística real da comunidade, quando já houver dados suficientes
+    registrarRespostaComunidade(questao.id, opcao.correto);
+    exibirEstatisticaComunidade(questao.id, opcao.correto);
+
+    // Barra de progresso: começa cheia e diminui da direita pra esquerda,
+    // seguindo exatamente o tempo real até a próxima pergunta (7500ms)
+    const feedbackProgress = document.getElementById('feedback-progress');
+    const DURACAO_FEEDBACK = 7500;
+    feedbackProgress.style.transition = 'none';
+    feedbackProgress.style.width = '100%';
+    // Força o navegador a registrar o width:100% antes de iniciar a transição
+    void feedbackProgress.offsetWidth;
+    feedbackProgress.style.transition = `width ${DURACAO_FEEDBACK}ms linear`;
+    feedbackProgress.style.width = '0%';
+
     // Registrar resposta
     respostasUsuario.push({
         questao: questao,
@@ -690,26 +871,17 @@ function responderPergunta(opcao, botaoElemento) {
         correto: opcao.correto
     });
 
-    // Próxima pergunta ou resultado
+    // Próxima pergunta ou resultado: os cartões saem para a esquerda antes de trocar
     setTimeout(() => {
-        indicePerguntaAtual++;
-        if (indicePerguntaAtual < questoesAtivas.length) {
-            // Animar saída da questão atual para a esquerda antes de carregar a próxima
-            const opcoesContainer = document.getElementById('opcoes-container');
-            opcoesContainer.style.transition = 'opacity 0.3s ease, transform 0.3s ease';
-            opcoesContainer.style.opacity = '0';
-            opcoesContainer.style.transform = 'translateX(-100px)';
-
-            setTimeout(() => {
+        sairCartoesAtuais(() => {
+            indicePerguntaAtual++;
+            if (indicePerguntaAtual < questoesAtivas.length) {
                 carregarPergunta();
-            }, 300);
-        } else {
-            // Última questão - ir para tela de processamento SEM tocar som adicional
-            setTimeout(() => {
+            } else {
                 mostrarTelaProcessamento();
-            }, 200);
-        }
-    }, 3200);
+            }
+        });
+    }, DURACAO_FEEDBACK);
 }
 
 // ==========================================
@@ -785,9 +957,9 @@ function exibirResultado(score, ranking, nivel, descricao) {
     document.getElementById('ranking-texto').textContent =
         `Você está acima de ${ranking}% dos participantes`;
 
-    // Atualizar card de compartilhamento
     document.getElementById('card-score').textContent = score + '%';
     document.getElementById('card-nivel').textContent = nivel;
+    atualizarFrasesLegais();
 
     mostrarTela('tela-resultado', 'direita');
 }
@@ -802,6 +974,16 @@ function reiniciarQuiz() {
     pontuacaoTotal = 0;
     questoesAtivas = selecionarQuestoesAleatorias(); // Novas questões aleatórias
 
+    // Voltar fundo para cor clara
+    document.body.style.transition = 'background-color 0.6s ease';
+    document.body.style.backgroundColor = 'var(--bg-primary)';
+
+    // Restaurar tela inicial ao estado original
+    const telaInicio = document.getElementById('tela-inicio');
+    telaInicio.style.opacity = '';
+    telaInicio.style.visibility = '';
+    telaInicio.style.display = '';
+
     mostrarTela('tela-inicio', 'esquerda');
 }
 
@@ -809,20 +991,109 @@ function reiniciarQuiz() {
 // COMPARTILHAMENTO
 // ==========================================
 
+// Quebra um texto em linhas que cabem em uma largura máxima, centralizado
+function quebrarLinhas(ctx, texto, larguraMaxima) {
+    const palavras = texto.split(' ');
+    const linhas = [];
+    let linhaAtual = '';
+
+    palavras.forEach(palavra => {
+        const tentativa = linhaAtual ? `${linhaAtual} ${palavra}` : palavra;
+        if (ctx.measureText(tentativa).width > larguraMaxima && linhaAtual) {
+            linhas.push(linhaAtual);
+            linhaAtual = palavra;
+        } else {
+            linhaAtual = tentativa;
+        }
+    });
+    if (linhaAtual) linhas.push(linhaAtual);
+    return linhas;
+}
+
 async function gerarImagemResultado() {
-    if (!html2canvasCarregado) {
-        html2canvasCarregado = true;
+    // Dados atuais do resultado (já calculados e exibidos na tela)
+    const score = document.getElementById('score-valor').textContent;
+    const nivel = document.getElementById('nivel-titulo').textContent;
+
+    // Garante que as fontes do Google Fonts já usadas na página estão prontas,
+    // evitando texto desalinhado/sobreposto por fallback de fonte no meio do desenho
+    try {
+        await document.fonts.ready;
+    } catch (e) {
+        // Se a API não estiver disponível, segue com as fontes já carregadas até aqui
     }
 
-    const elementoResultado = document.getElementById('card-resultado');
+    // Resolução final fixa e leve: 800x600, desenhada manualmente para garantir
+    // centralização perfeita e nenhum texto cortado ou sobreposto
+    const LARGURA = 800;
+    const ALTURA = 600;
+
+    const canvas = document.createElement('canvas');
+    canvas.width = LARGURA;
+    canvas.height = ALTURA;
+    const ctx = canvas.getContext('2d');
+
+    const corFundoPagina = '#FDFCF0';
+    const corCartao = '#FFFFFF';
+    const corBorda = '#000000';
+    const corPrimaria = '#7E57C2';
+    const corTextoPrimario = '#37474F';
+    const corTextoSecundario = '#78909C';
+
+    // Fundo da página
+    ctx.fillStyle = corFundoPagina;
+    ctx.fillRect(0, 0, LARGURA, ALTURA);
+
+    // Cartão branco com borda preta, no estilo "cartoon" do site
+    const margemCartao = 40;
+    const larguraCartao = LARGURA - margemCartao * 2;
+    const alturaCartao = ALTURA - margemCartao * 2;
+    ctx.fillStyle = corCartao;
+    ctx.fillRect(margemCartao, margemCartao, larguraCartao, alturaCartao);
+    ctx.lineWidth = 4;
+    ctx.strokeStyle = corBorda;
+    ctx.strokeRect(margemCartao + 2, margemCartao + 2, larguraCartao - 4, alturaCartao - 4);
+
+    const centroX = LARGURA / 2;
+    const larguraMaximaTexto = larguraCartao - 100;
+    ctx.textAlign = 'center';
+
+    let cursorY = margemCartao + 78;
+
+    // Título
+    ctx.fillStyle = corPrimaria;
+    ctx.font = "800 42px Phenomena, Arial, sans-serif";
+    ctx.fillText('Entrelinhas', centroX, cursorY);
+
+    // Subtítulo
+    cursorY += 34;
+    ctx.fillStyle = corTextoSecundario;
+    ctx.font = "italic 400 20px Phenomena, Arial, sans-serif";
+    ctx.fillText('Você Reconheceria?', centroX, cursorY);
+
+    // Score
+    cursorY += 100;
+    ctx.fillStyle = corPrimaria;
+    ctx.font = "900 88px Phenomena, Arial, sans-serif";
+    ctx.fillText(score, centroX, cursorY);
+
+    // Nível
+    cursorY += 56;
+    ctx.fillStyle = corTextoPrimario;
+    ctx.font = "700 26px Phenomena, Arial, sans-serif";
+    ctx.fillText(nivel, centroX, cursorY);
+
+    // Frase final (com quebra de linha automática, centralizada)
+    cursorY += 56;
+    ctx.fillStyle = corTextoSecundario;
+    ctx.font = "italic 400 17px Phenomena, Arial, sans-serif";
+    const frase = '"Você reconheceu o que muitos normalizam"';
+    const linhasFrase = quebrarLinhas(ctx, frase, larguraMaximaTexto);
+    linhasFrase.forEach((linha, index) => {
+        ctx.fillText(linha, centroX, cursorY + index * 24);
+    });
 
     try {
-        const canvas = await html2canvas(elementoResultado, {
-            backgroundColor: '#FDFCF0',
-            scale: 2,
-            logging: false
-        });
-
         canvas.toBlob(blob => {
             const url = URL.createObjectURL(blob);
             const link = document.createElement('a');
@@ -830,7 +1101,7 @@ async function gerarImagemResultado() {
             link.href = url;
             link.click();
             URL.revokeObjectURL(url);
-        });
+        }, 'image/png', 0.92);
     } catch (error) {
         console.error('Erro ao gerar imagem:', error);
         alert('Não foi possível gerar a imagem. Tente copiar o texto.');
@@ -865,30 +1136,38 @@ Teste você também!`;
 // EVENT LISTENERS
 // ==========================================
 
-document.getElementById('btn-iniciar').addEventListener('click', iniciarQuiz);
-document.getElementById('btn-tentar-novamente').addEventListener('click', reiniciarQuiz);
-document.getElementById('btn-compartilhar').addEventListener('click', () => {
-    document.getElementById('modal-compartilhar').classList.remove('escondido');
-});
+const btnIniciar = document.getElementById('btn-iniciar');
+const btnTentarNovamente = document.getElementById('btn-tentar-novamente');
+const btnCompartilhar = document.getElementById('btn-compartilhar');
+const modalCompartilhar = document.getElementById('modal-compartilhar');
+const btnFecharModal = document.getElementById('modal-fechar');
+const btnBaixarImagem = document.getElementById('btn-baixar-imagem');
+const btnCopiarTexto = document.getElementById('btn-copiar-texto');
 
-document.getElementById('modal-fechar').addEventListener('click', () => {
-    document.getElementById('modal-compartilhar').classList.add('escondido');
-});
-
-document.getElementById('btn-baixar-imagem').addEventListener('click', gerarImagemResultado);
-document.getElementById('btn-copiar-texto').addEventListener('click', copiarTextoCompartilhar);
-
-// Fechar modal ao clicar fora
-document.getElementById('modal-compartilhar').addEventListener('click', (e) => {
-    if (e.target.id === 'modal-compartilhar') {
-        document.getElementById('modal-compartilhar').classList.add('escondido');
-    }
-});
+if (btnIniciar) btnIniciar.addEventListener('click', iniciarQuiz);
+if (btnTentarNovamente) btnTentarNovamente.addEventListener('click', reiniciarQuiz);
+if (btnCompartilhar) {
+    btnCompartilhar.addEventListener('click', () => {
+        if (modalCompartilhar) modalCompartilhar.classList.remove('escondido');
+    });
+}
+if (btnFecharModal) {
+    btnFecharModal.addEventListener('click', () => {
+        if (modalCompartilhar) modalCompartilhar.classList.add('escondido');
+    });
+}
+if (btnBaixarImagem) btnBaixarImagem.addEventListener('click', gerarImagemResultado);
+if (btnCopiarTexto) btnCopiarTexto.addEventListener('click', copiarTextoCompartilhar);
+if (modalCompartilhar) {
+    modalCompartilhar.addEventListener('click', (e) => {
+        if (e.target.id === 'modal-compartilhar') {
+            modalCompartilhar.classList.add('escondido');
+        }
+    });
+}
 
 // ==========================================
 // INICIALIZAÇÃO
 // ==========================================
 
-console.log('Quiz Entrelinhas carregado com sucesso!');
-console.log(`Banco total: ${bancoQuestoes.length} questões`);
-console.log(`Questões por quiz: 12 (selecionadas aleatoriamente)`);
+atualizarFrasesLegais();

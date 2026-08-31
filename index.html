@@ -4,17 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Entrelinhas: Você Reconheceria? - Um quiz interativo sobre violências invisíveis no cotidiano">
-    <title>Entrelinhas – Você Reconheceria?</title>
-
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700&family=Montserrat:wght@600;700;900&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Entrelinhas</title>
 
     <!-- Stylesheet -->
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Caveat:wght@600;700&family=Unbounded:wght@600;800&family=Fraunces:ital,wght@1,500&display=swap" rel="stylesheet">
+
 </head>
 <body>
+
     <!-- Cursor Personalizado -->
     <div id="custom-cursor"></div>
 
@@ -30,7 +30,49 @@
                     Violências sutis estão presentes no nosso cotidiano, muitas vezes disfarçadas de cuidado ou brincadeira.
                     Este quiz vai testar sua capacidade de identificar comportamentos problemáticos que muitos normalizam.
                 </p>
-                <button id="btn-iniciar" class="botao botao-primario">Iniciar Jornada</button>
+                <p id="frase-legal-intro" class="frase-legal">Seguindo a Lei Maria da Penha e outras leis de proteção à mulher.</p>
+
+                <!-- Botão principal: movido para cima dos 3 cards e ampliado,
+                     pra virar o primeiro ponto de atenção visual da página e
+                     guiar o usuário a agir rápido (não precisa rolar pra achar). -->
+                <button id="btn-iniciar" class="botao botao-primario botao-destaque" type="button">Iniciar Jornada</button>
+
+                <div class="intro-quadros" role="group" aria-label="Indicadores do tema">
+                    <div class="intro-card">
+                        <span class="mini-titulo">O que observar</span>
+                        <strong>Cuidado x<br>controle</strong>
+                        <p>Quando atenção vira vigilância, limite vira culpa e carinho vira obrigação.</p>
+                    </div>
+                    <div class="intro-card">
+                        <span class="mini-titulo">O que normalizam</span>
+                        <strong>Brincadeira<br>que machuca</strong>
+                        <p>Piadas, apelidos e gestos que repetem humilhação deixam marcas duradouras.</p>
+                    </div>
+                    <div class="intro-card">
+                        <span class="mini-titulo">O que apoiar</span>
+                        <strong>Escuta e<br>acolhimento</strong>
+                        <p>Reconhecer a situação é o primeiro passo para romper o silêncio e buscar ajuda.</p>
+                    </div>
+                </div>
+
+                <div class="intro-apoio" role="group" aria-label="Canais de ajuda imediata">
+                    <p class="intro-apoio-label">Se algo te tocou, você não está sozinha</p>
+                    <div class="intro-apoio-lista">
+                        <a class="intro-apoio-item" href="tel:180"><strong>180</strong> Mulher • violência doméstica</a>
+                        <a class="intro-apoio-item" href="tel:100"><strong>100</strong> Direitos Humanos • discriminação</a>
+                        <a class="intro-apoio-item" href="tel:188"><strong>188</strong> CVV • apoio emocional 24h</a>
+                    </div>
+                </div>
+
+                <div class="apoio-marcas" aria-label="Projeto Se Liga, Moçada! em parceria com CIEE">
+                    <a class="marca-se-liga" href="https://seligamocada.com.br/" target="_blank" rel="noopener noreferrer" aria-label="Se Liga, Moçada!">
+                        <img src="img/logo-se-liga-mocada.png" alt="Se Liga, Moçada!" loading="lazy">
+                    </a>
+                    <span class="marca-x" aria-hidden="true">×</span>
+                    <a class="marca-ciee" href="https://portal.ciee.org.br/" target="_blank" rel="noopener noreferrer" aria-label="CIEE">
+                        <img src="img/logo-ciee.png" alt="CIEE" loading="lazy">
+                    </a>
+                </div>
             </div>
         </section>
 
@@ -53,6 +95,8 @@
                 <div id="feedback" class="feedback escondido">
                     <p id="feedback-titulo" class="feedback-titulo"></p>
                     <p id="feedback-explicacao" class="feedback-explicacao"></p>
+                    <p id="feedback-estatistica" class="feedback-estatistica escondido"></p>
+                    <div id="feedback-progress" class="feedback-progress"></div>
                 </div>
             </div>
         </section>
@@ -76,6 +120,12 @@
                     <div class="score-container">
                         <p class="score-label">Score de Consciência</p>
                         <p id="score-valor" class="score-valor">0%</p>
+                        <div id="estatisticas-comunidade" class="estatisticas-comunidade escondido" aria-live="polite">
+                            <span class="estatisticas-grafico" aria-hidden="true">
+                                <i></i><i></i><i></i><i></i><i></i>
+                            </span>
+                            <p id="estatisticas-comunidade-texto" class="estatisticas-texto"></p>
+                        </div>
                     </div>
 
                     <div class="nivel-container">
@@ -88,21 +138,35 @@
                     </div>
                 </div>
 
-                <div class="acoes-resultado">
-                    <button id="btn-tentar-novamente" class="botao botao-secundario">Tentar Novamente</button>
-                    <button id="btn-compartilhar" class="botao botao-primario">Compartilhar Resultado</button>
+                <p id="frase-legal-resultado" class="frase-legal frase-legal-resultado">Seguindo a Lei Maria da Penha e outros marcos legais de proteção à mulher.</p>
+
+                <!-- Trilha de apoio: canais reais de ajuda, não é só um teste -->
+                <div class="apoio-container">
+                    <p class="apoio-titulo">Se alguma dessas situações te tocou pessoalmente</p>
+                    <p class="apoio-texto">Existem canais de apoio gratuitos e sigilosos no Brasil:</p>
+                    <ul class="apoio-lista">
+                        <li><a href="tel:180"><strong>180</strong> — Central de Atendimento à Mulher (violência doméstica e de gênero)</a></li>
+                        <li><a href="tel:100"><strong>100</strong> — Disque Direitos Humanos (denúncias de violência e discriminação)</a></li>
+                        <li><a href="tel:188"><strong>188</strong> — CVV, Centro de Valorização da Vida (apoio emocional, 24h, sigiloso)</a></li>
+                    </ul>
                 </div>
+
+                <div class="acoes-resultado">
+                    <button id="btn-tentar-novamente" class="botao botao-secundario" type="button">Tentar Novamente</button>
+                    <button id="btn-compartilhar" class="botao botao-primario" type="button">Compartilhar Resultado</button>
+                </div>
+
             </div>
         </section>
 
         <!-- Modal de Compartilhamento -->
         <div id="modal-compartilhar" class="modal escondido">
             <div class="modal-conteudo">
-                <button id="modal-fechar" class="modal-fechar" aria-label="Fechar modal">&times;</button>
+                <button id="modal-fechar" class="modal-fechar" aria-label="Fechar modal" type="button">&times;</button>
 
                 <h3 class="modal-titulo">Compartilhe seu resultado</h3>
 
-                <!-- Card para captura (html2canvas) -->
+                <!-- Card exibido no modal de compartilhamento (a imagem final é desenhada via canvas) -->
                 <div id="card-resultado" class="card-compartilhar">
                     <h2 class="card-titulo">Entrelinhas</h2>
                     <p class="card-subtitulo">Você Reconheceria?</p>
@@ -112,8 +176,8 @@
                 </div>
 
                 <div class="modal-acoes">
-                    <button id="btn-baixar-imagem" class="botao botao-primario">Baixar Imagem</button>
-                    <button id="btn-copiar-texto" class="botao botao-secundario">Copiar Texto</button>
+                    <button id="btn-baixar-imagem" class="botao botao-primario" type="button">Baixar Imagem</button>
+                    <button id="btn-copiar-texto" class="botao botao-secundario" type="button">Copiar Texto</button>
                 </div>
 
                 <p id="feedback-copiar" class="feedback-copiar escondido">✓ Texto copiado!</p>
@@ -122,10 +186,7 @@
 
     </main>
 
-    <!-- html2canvas (carregado apenas quando necessário) -->
-    <script src="https://cdn.jsdelivr.net/npm/html2canvas@1.4.1/dist/html2canvas.min.js" defer></script>
-
-    <!-- Script principal -->
+    <!-- script -->
     <script src="script.js"></script>
 </body>
 </html>
