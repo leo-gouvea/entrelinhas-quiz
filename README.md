@@ -4,8 +4,6 @@
 
 🔗 [Jogue aqui](#) · 🎓 Projeto para o programa [Se Liga, Moçada!](https://seligamocada.com.br/)
 
-> **TL;DR (EN):** A single-page quiz built with vanilla HTML/CSS/JS that presents 12 (of a 30-question bank) real-world scenarios of normalized gender-based violence (gaslighting, coercive control, victim-blaming, workplace discrimination). No framework, no build step — deliberately, so anyone can open the source and understand it. Includes a real anonymous-analytics backend via Google Apps Script, a hand-rolled Canvas-based share-image generator (no html2canvas), and two debugging stories below — a CSS/JS animation-timing desync and a mobile-scroll layout bug — that are genuinely good technical reads.
-
 ---
 
 ## Por que esse projeto existe
