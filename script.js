@@ -585,6 +585,8 @@ function mostrarTela(idTela, direcao = 'direita') {
         novaTela.classList.add('entrando-esquerda');
     }
 
+    ajustarEscalaTela(novaTela);
+
     setTimeout(() => {
         if (telaAtual && telaAtual !== novaTela) {
             telaAtual.classList.remove('tela-saindo-esquerda', 'tela-saindo-direita');
@@ -592,10 +594,50 @@ function mostrarTela(idTela, direcao = 'direita') {
         }
         novaTela.classList.remove('entrando-direita', 'entrando-esquerda');
         novaTela.classList.add('tela-ativa');
+        ajustarEscalaTela(novaTela);
     }, 800); // CORREÇÃO: tinha que ser 800ms para bater com a duração real da
              // animação CSS (0.8s) — estava em 420ms, cortando a animação no
              // meio e causando o "teleporte"/corte perceptível no final.
 }
+
+// ==========================================
+// AJUSTE AUTOMÁTICO DE ESCALA (sem scroll, em qualquer resolução)
+// ==========================================
+// No desktop, nenhuma tela deve precisar de scroll, em nenhuma resolução.
+// Em vez de caçar breakpoints/clamp() pra cada combinação possível de
+// altura x largura, medimos a altura real do conteúdo já renderizado e
+// aplicamos um transform: scale() proporcional só quando ele ultrapassa
+// a altura disponível da tela — nunca corta, se ajusta sozinho mesmo se
+// o conteúdo mudar de tamanho (nova questão, feedback, resultado etc).
+function ajustarEscalaTela(tela) {
+    if (!tela) return;
+    const container = tela.querySelector('.container');
+    if (!container) return;
+
+    if (window.innerWidth < 768) {
+        // No celular o scroll é permitido normalmente: sem escala.
+        container.style.transform = '';
+        return;
+    }
+
+    container.style.transform = 'none';
+    const disponivel = tela.clientHeight;
+    const necessario = container.scrollHeight;
+
+    if (necessario > disponivel) {
+        const escala = Math.max(disponivel / necessario, 0.5);
+        container.style.transform = `scale(${escala})`;
+    } else {
+        container.style.transform = 'none';
+    }
+}
+
+function ajustarEscalaTelaAtiva() {
+    ajustarEscalaTela(document.querySelector('.tela-ativa'));
+}
+
+window.addEventListener('resize', ajustarEscalaTelaAtiva);
+window.addEventListener('load', ajustarEscalaTelaAtiva);
 
 // ==========================================
 // LÓGICA DO QUIZ
@@ -797,6 +839,7 @@ function exibirEstatisticaComunidade(questaoId, respostaCorreta) {
         elemento.textContent = `📊 ${percentualErro}% de quem já respondeu essa questão também errou.`;
     }
     elemento.classList.remove('escondido');
+    ajustarEscalaTelaAtiva();
 }
 
 function responderPergunta(opcao, botaoElemento) {
@@ -847,6 +890,7 @@ function responderPergunta(opcao, botaoElemento) {
     // Mostrar explicação
     feedbackExplicacao.textContent = questao.explicacao;
     feedbackDiv.classList.remove('escondido');
+    ajustarEscalaTelaAtiva();
 
     // Registra esta resposta na planilha (se configurada) e mostra a
     // estatística real da comunidade, quando já houver dados suficientes
